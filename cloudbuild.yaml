@@ -1,0 +1,15 @@
+steps:
+  # Deploy to Google App Engine
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - 'app'
+      - 'deploy'
+      - 'app.yaml'
+      - '--quiet'
+      - '--project=$PROJECT_ID'
+
+# Optional: Set timeout
+timeout: '600s'
+
+# Optional: Specify which branch triggers deployment
+# This is configured in Cloud Build trigger settings
