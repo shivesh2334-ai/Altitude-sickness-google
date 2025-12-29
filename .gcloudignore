@@ -1,0 +1,44 @@
+# This file specifies files that are not uploaded to Google Cloud Platform
+# See gcloud topic gcloudignore for more information.
+
+.gcloudignore
+.git
+.gitignore
+.github/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation
+README.md
+DEPLOYMENT.md
+docs/
+
+# CI/CD (Cloud Build will handle deployment)
+cloudbuild.yaml
+
+# Testing
+tests/
+*.test
